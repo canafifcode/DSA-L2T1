@@ -1,0 +1,22 @@
+/*
+    STEPS FOR KRUSHKAL'S ALGORITHM:
+    1. sort all the edges in non-decreasing order of their weight
+    2. create a parent array and rank array for union-find
+    3. iterate through all the edges:
+        a. for each edge, check if the two vertices belong to different components using find operation
+        b. if they do, include this edge in the mst and perform union operation to merge the components
+*/
+
+/*
+    STEPS FOR PRIMS ALGORITHM:
+    1. create a min heap to store the edges with minimum weight
+    2. create a visited array to keep track of visited nodes
+    3. push the root node into the min heap with weight 0 --> MEANS THAT WE ARE STARTING FROM THE ROOT NODE
+    4. while the min heap is not empty:
+        a. pop the top element from the min heap
+        b. if the node is already visited, continue
+        c. mark the node as visited
+        d. add the edge to the mst
+        e. for each adjacent node of the current node:
+            i. if the adjacent node is not visited, push it into the min heap with its weight
+*/
